@@ -1,10 +1,17 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %}<head>
+  {% block index_head %}
+  <title>Sensive Blog - Home</title>
+  {% endblock %}
+</head>
 {% load static %}
+
+
 
 <body>
 
   {% block index %}
-  <main class="site-main">
+
+    <main class="site-main">
     <!--================Hero Banner start =================-->
     <section class="mb-30px">
       <div class="container">

@@ -5,9 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sensive Blog - Home</title>
   <link rel="icon" href="{% static "img/favicon.png" %}" type="image/png">
+  {% block index_head %}
 
+    {% endblock %}
+  {% block contact_head %}
+
+    {% endblock %}
+  {% block blog_details_head %}
+
+    {% endblock %}
   <link rel="stylesheet" href="{% static "styles.min.css" %}">
 </head>
 <body>
@@ -42,12 +49,15 @@
   </header>
   <!--================Header Menu Area =================-->
     {% block index %}
+
     {% endblock %}
 
     {% block blog_details %}
+
     {% endblock %}
 
     {% block contact %}
+
     {% endblock %}
 
 </body>

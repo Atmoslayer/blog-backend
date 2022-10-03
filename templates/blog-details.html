@@ -1,5 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
+
+<head>
+  {% block blog_details_head %}
+  <title>{{ post.title }} - Blog Details</title>
+  {% endblock %}
+</head>
+
 <body>
 
   {% block blog_details %}
